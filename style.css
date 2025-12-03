@@ -1,0 +1,341 @@
+/* Global Styles */
+:root {
+    --primary-color: #3498db;
+    /* Professional Blue */
+    --secondary-color: #2c3e50;
+    /* Dark Blue/Black */
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --accent-color: #ecf0f1;
+    /* Light Gray */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navigation a {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* --- Book Page Theme (Modern Minimalist) --- */
+.book-page {
+    background-color: #fff;
+    color: #333;
+}
+
+.book-page .container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.book-page h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.book-page .subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.book-details {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 6rem;
+    align-items: center;
+}
+
+.book-cover-placeholder {
+    flex: 1;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.book-cover-placeholder:hover {
+    transform: translateY(-10px);
+}
+
+.book-info {
+    flex: 1.5;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.book-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.book-info h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+    margin-top: 10px;
+}
+
+.habits-list {
+    margin-bottom: 6rem;
+}
+
+.habits-list h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+.habits {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.habits li {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.habits li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.habit-number {
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(52, 152, 219, 0.1);
+    /* Faded primary color */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    line-height: 1;
+}
+
+.habit-content {
+    position: relative;
+    z-index: 1;
+}
+
+.habit-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.author-section {
+    display: flex;
+    gap: 4rem;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 4rem;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.author-content {
+    flex: 2;
+}
+
+.author-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.author-content p {
+    color: #bdc3c7;
+    margin-bottom: 2rem;
+}
+
+.other-works {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.other-works li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.efficiency-art {
+    flex: 1;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    /* Make image black and white */
+}
+
+/* --- Profile Page Theme (Enhanced Professional) --- */
+.profile-page {
+    background-color: #f8f9fa;
+}
+
+.profile-hero {
+    background: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-pic-container {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(52, 152, 219, 0.2);
+}
+
+.profile-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.profile-hero .role {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.profile-content {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.cv-section {
+    background: #fff;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cv-item {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 2rem;
+}
+
+.cv-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.cv-item h3 {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.3rem;
+}
+
+.cv-item .meta {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.cv-list {
+    list-style-position: outside;
+    margin-left: 1.2rem;
+}
+
+.cv-list li {
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+.cv-list-simple {
+    list-style: none;
+}
+
+.cv-list-simple li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #eee;
+}
+
+color: #7f8c8d;
+font-size: 0.9rem;
+}

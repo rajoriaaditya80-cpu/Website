@@ -1,0 +1,30 @@
+# Task: Create Personal Website with Book Page
+
+- [/] Project Initialization <!-- id: 0 -->
+    - [x] Create `task.md` <!-- id: 1 -->
+    - [x] Create `implementation_plan.md` <!-- id: 2 -->
+    - [x] Initialize Vite project (Skipped - npm missing) <!-- id: 3 -->
+- [x] Asset Preparation <!-- id: 5 -->
+    - [x] Move uploaded images to assets directory <!-- id: 6 -->
+    - [x] Generate aged paper texture <!-- id: 7 -->
+    - [x] Generate book genre mood images <!-- id: 8 -->
+    - [x] Generate efficiency related images <!-- id: 9 -->
+- [x] Implementation - Page 1 (Book) <!-- id: 10 -->
+    - [x] Create HTML structure for Book page <!-- id: 11 -->
+    - [x] Implement "Aged Paper" theme CSS <!-- id: 12 -->
+    - [x] Add content for "7 Habits" and Stephen Covey <!-- id: 13 -->
+- [x] Implementation - Page 2 (Profile) <!-- id: 14 -->
+    - [x] Create HTML structure for Profile page <!-- id: 15 -->
+    - [x] Implement "Professional" theme CSS <!-- id: 16 -->
+    - [x] Add content from CV (Aditya Rajoriya) (Used placeholders) <!-- id: 17 -->
+- [x] Verification <!-- id: 18 -->
+    - [x] Verify responsive design <!-- id: 19 -->
+    - [x] Verify navigation between pages <!-- id: 20 -->
+- [x] Content & Design Updates <!-- id: 21 -->
+    - [x] Update `profile.html` with CV data (Experience, Projects, Certs) <!-- id: 22 -->
+    - [x] Redesign `index.html` (Book Page) to Modern Minimalist <!-- id: 23 -->
+    - [x] Update `style.css` for Blue/White/Black theme <!-- id: 24 -->
+    - [x] Verify new design <!-- id: 25 -->
+- [x] Contact Us Update <!-- id: 26 -->
+    - [x] Create "Contact Us" section/tab at bottom of `profile.html` <!-- id: 27 -->
+    - [x] Ensure email `aditya22.tapmimpl2025@learner.manipal.edu` is prominent <!-- id: 28 -->
